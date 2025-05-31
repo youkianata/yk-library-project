@@ -1,0 +1,209 @@
+/* App.css */
+
+/* Base styles 
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8f9fa;
+  }
+  
+  .App {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+   Header styles 
+  .App-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .App-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .App-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+   Chart container styles 
+  .chart-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .chart-title {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+   Grid layout for charts 
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+   Individual chart wrapper 
+  .chart-wrapper {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  
+  Dynamic chart specific styles 
+  .dynamic-chart {
+    border-left: 4px solid #3498db;
+  }
+  
+   Responsive adjustments 
+  @media (max-width: 1200px) {
+    .charts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .App {
+      padding: 1rem;
+    }
+    
+    .chart-container {
+      padding: 1rem;
+    }
+    
+    .chart-wrapper {
+      height: 300px;
+    }
+  }
+  
+   Tooltip customization 
+  .chartjs-tooltip {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 4px !important;
+    color: white !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+   Legend customization 
+  .chartjs-legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .chartjs-legend li {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chartjs-legend span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 2px;
+  }*/
+
+  /* Charts grid layout */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .chart-container {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chart-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .chart-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: 600;
+  }
+  
+  .chart-wrapper {
+    flex: 1;
+    min-height: 300px;
+    position: relative;
+  }
+  
+  /* Dark mode styles */
+  .dark .chart-container {
+    background: #2c3034;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark .chart-title {
+    color: #e9ecef;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .charts-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .flex.flex-col.sm\:flex-row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .flex.gap-4 {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-wrapper {
+      min-height: 250px;
+    }
+    
+    .px-2.sm\:px-6 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+
+
+
